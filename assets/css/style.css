@@ -525,6 +525,11 @@ td:last-child {
     height: 385px;
   }
 }
+@media screen and (max-width: 1367px) {
+  tbody {
+    height: 290px;
+  }
+}
 
 @media screen and (max-width: 1200px) {
   aside {
@@ -536,7 +541,7 @@ td:last-child {
   }
 
   tbody {
-    height: 135px;
+    height: 205px;
   }
 }
 
