@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quicksend - Payment Module</title>
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/icons.css">
+  <link rel="stylesheet" href="./assets/css/fonts.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+  <!-- Header Section: Start -->
+  <header>
+  </header>
+  <!-- Header Section: Ends -->
+  <!-- Main Section: Start -->
+  <main>
+    <!-- Aside: Start -->
+    <aside>
+      <h1 class="quickpay-heading">Quicksend</h1>
+      <span class="toggle-btn">Q</span>
+      <nav>
+        <a href="javascript:;" class="nav-link" title="Home"><span class="icon icon-home"></span> <span class="nav-text">Home</span></a>
+        <a href="javascript:;" class="nav-link" title="Designs"><span class="icon icon-slack"></span> <span class="nav-text">Designs</span></a>
+        <a href="javascript:;" class="nav-link" title="Share"><span class="icon icon-send"></span> <span class="nav-text">Share</span></a>
+        <a href="javascript:;" class="nav-link active" title="Payments"><span class="icon icon-payment"></span> <span class="nav-text">Payments</span></a>
+        <a href="javascript:;" class="nav-link" title="Settings"><span class="icon icon-settings"></span> <span class="nav-text">Settings</span></a>
+      </nav>
+      <a href="javascript:;" class="nav-link nav-support" title="Support"><span class="icon icon-support"></span> <span class="nav-text">Support</span></a>
+    </aside>
+    <!-- Aside: Ends -->
+    
+    <!-- Main Content: Start -->
+    <section class="main-content">
+      <!-- Topbar: Start -->
+      <div class="section-topbar">
+        <h4 class="topbar-heading">Payments</h4>
+        <div class="topbar-edit-profile">
+          <span class="text-gray">Good Morning, <span class="username">Jatin</span></span>
+          <span class="username-initial">JB</span>
+        </div>
+      </div>
+      <!-- Topbar: Ends -->
+      <!-- Dashboard Counter: Start -->
+      <section class="dashboard-counter-wrapper">
+        <div class="amount-counter">
+          <div class="amount-counter-main">
+            <span class="counter-heading">Total Received</span>
+            <h2 class="counter-total-received">84,254.58</h2>
+            <span class="badge badge-success">+10% since last month</span>
+          </div>
+          <div class="amount-counter-other">
+            <div class="amount-counter-pending">
+              <span class="counter-sub-heading text-primary">Pending</span>
+              <h5 class="counter-pending">15,000.00</h5>
+            </div>
+            <div class="amount-counter-drafts">
+              <span class="counter-sub-heading text-gray">In drafts</span>
+              <h5 class="counter-pending">1,000.00</h5>
+            </div>
+          </div>
+        </div>
+        <div class="quickpay-content-block">
+          <div class="quickpay-content-header">
+            <h5 class="quickpay-content-heading">Powered by Quickpay</h5>
+            <span class="badge badge-secondary">Integration</span>
+          </div>
+          <p class="text-gray">Quickplay lets you receive payments on the fly</p>
+          <p class="text-gray">Easily generate invoices that are print-ready, or simply share payment link via SMS/E-mail to request payment.</p>
+        </div>
+      </section>
+      <!-- Dashboard Counter: Ends -->
+      <!-- Invoices Table: Start -->
+      <section class="invoices-table-block">
+        <!-- Invoices Table Header: Start -->
+        <div class="invoices-table-header">
+          <div class="invoices-table-header-wrap">
+            <h4 class="invoices-table-heading">Invoices</h4>
+            <span class="text-gray invoices-table-sub-heading">Find your recent transactions below.</span>
+          </div>
+          <button class="btn btn-secondary"><span class="icon icon-plus"></span>New Invoice</button>
+        </div>
+        <!-- Invoices Table Header: Ends -->
+        <!-- Invoices Table Search: Start -->
+        <div class="invoices-table-search-block">
+          <div class="form-group">
+            <input type="text" name="search" id="searchInvoices" placeholder="Search Invoices" aria-labelledby="Search Invoices" class="form-control">
+            <span class="icon icon-search"></span>
+          </div>
+          <!-- Select Dropdown: Start -->
+          <div class="dropdown">
+            <input type="checkbox" class="dropdown__switch" id="filter-switch" hidden />
+            <label for="filter-switch" class="dropdown__options-filter">
+              <ul class="dropdown__filter" role="listbox" tabindex="-1">
+                <li class="dropdown__filter-selected" aria-selected="true">
+                  This week
+                </li>
+                <li>
+                  <ul class="dropdown__select">
+                    <li class="dropdown__select-option" role="option">
+                      This week
+                    </li>
+                    <li class="dropdown__select-option" role="option">
+                      Last week
+                    </li>
+                    <li class="dropdown__select-option" role="option">
+                      Date range
+                    </li>
+                    <li class="dropdown__select-option" role="option">
+                      All time
+                    </li>
+                  </ul>
+                </li>
+              </ul>			
+            </label>
+          </div>
+          <!-- Select Dropdown: Ends -->
+        </div>
+        <!-- Invoices Table Search: Ends -->
+        <!-- Invoices Data Table: Start -->
+        <div class="table-wrapper">
+          <table class="invoices-data-table">
+            <thead>
+              <tr>
+                <th>Invoice Number</th>
+                <th>Date</th>
+                <th>Client</th>
+                <th>Amount</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>#JB20210730003</td>
+                <td>July 30, 2021</td>
+                <td>Biskoot Pvt. Ltd</td>
+                <td>10,000.00</td>
+                <td><span class="badge badge-secondary">Pending</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210730002</td>
+                <td>July 30, 2021</td>
+                <td>Gajendra</td>
+                <td>5,000.00</td>
+                <td><span class="badge badge-secondary">Pending</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210730001</td>
+                <td>July 30, 2021</td>
+                <td>Anthony F.</td>
+                <td>1,000.00</td>
+                <td><span class="badge badge-gray">Draft</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210728004</td>
+                <td>July 28, 2021</td>
+                <td>Inder S.</td>
+                <td>5,450.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210728003</td>
+                <td>July 28, 2021</td>
+                <td>Yogesh I.</td>
+                <td>3,700.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210728002</td>
+                <td>July 28, 2021</td>
+                <td>Biskoot Pvt. Ltd</td>
+                <td>10,000.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210728001</td>
+                <td>July 28, 2021</td>
+                <td>Amit K.</td>
+                <td>2,000.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210727002</td>
+                <td>July 27, 2021</td>
+                <td>Gajendra T.</td>
+                <td>5,000.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210727001</td>
+                <td>July 27, 2021</td>
+                <td>Thomas L.</td>
+                <td>8,360.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210726003</td>
+                <td>July 26, 2021</td>
+                <td>Biskoot Pvt. Ltd</td>
+                <td>10,000.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210726002</td>
+                <td>July 26, 2021</td>
+                <td>Prakash M.</td>
+                <td>2,000.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+              <tr>
+                <td>#JB20210726001</td>
+                <td>July 26, 2021</td>
+                <td>Charles R.</td>
+                <td>5,600.00</td>
+                <td><span class="badge badge-success">Paid</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <!-- Invoices Data Table: Ends -->
+      </section>
+      <!-- Invoices Table: Ends -->
+    </section>
+    <!-- Main Content: Ends -->
+  </main>
+  <!-- Main Section: Ends -->
+  <!-- Footer Section: Start -->
+  <footer></footer>
+  <!-- Footer Section: Ends -->
+
+  <!-- Javascript -->
+  <script src="./assets/js/script.js"></script>
+</body>
+</html>
