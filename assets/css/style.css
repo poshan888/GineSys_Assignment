@@ -510,24 +510,14 @@ td:last-child {
 /* ===========================================================================
   Responsive Media Query
 =========================================================================== */
-@media screen and (max-width: 1920px) {
-  tbody {
-    height: 600px;
-  }
-}
-@media screen and (max-width: 1600px) {
-  tbody {
-    height: 410px;
-  }
-}
 @media screen and (max-width: 1440px) {
   tbody {
-    height: 385px;
+    height: 135px;
   }
 }
 @media screen and (max-width: 1367px) {
   tbody {
-    height: 290px;
+    height: 130px;
   }
 }
 
@@ -541,7 +531,7 @@ td:last-child {
   }
 
   tbody {
-    height: 205px;
+    height: 135px;
   }
 }
 
@@ -554,7 +544,7 @@ td:last-child {
     padding: 1.25rem 4rem 0;
   }
   tbody {
-    height: 200px;
+    height: 90px;
   }
   
   .amount-counter, .quickpay-content-header {
@@ -610,6 +600,10 @@ td:last-child {
 
   aside:hover .toggle-btn {
     display: none;
+  }
+  
+  td {
+    padding: 0.5rem;
   }
 }
 
